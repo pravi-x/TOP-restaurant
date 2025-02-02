@@ -1,0 +1,65 @@
+:root{
+    --color-background: chocolate;
+    --color-background-blocks: rgb(242, 237, 231);
+    --color-text: rgb(47, 39, 28);
+    --color-nav-background: sienna;
+    --color-nav-link-hover: peru;
+    --padding-nav: 10px;
+    --padding-heading-top: 60px;
+    --padding-nav-link: 8px 16px;
+    --border-radius-nav-link-hover: 4px;
+}
+
+body {
+    background-color: var(--color-background);  
+    color: var(--color-text);   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: var(--color-heading);
+    padding-top: var(--padding-heading-top);
+}
+
+/* Apply white background and shadow to text-like elements */
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+    background-color:var(--color-background-blocks);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+    padding:30px;
+    border-radius: 4px; /* Add rounded corners */
+}
+
+h1 {
+    padding: var(--padding-heading-top);
+    margin-top: 100px; /* Add 20px distance from the previous element */
+}
+
+/* NAV */
+nav {
+    background-color: var(--color-nav-background);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: none;
+}
+
+nav button {
+    background-color: var(--color-nav-background);
+    text-decoration: none;
+    padding: var(--padding-nav-link);
+    height: 90px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+nav button:hover {
+    background-color: var(--color-nav-link-hover);
+    border-radius: var(--border-radius-nav-link-hover);
+}
